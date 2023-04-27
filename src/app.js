@@ -15,6 +15,6 @@ app.use(routes);
 
 //atempts connection with mongodb atlas
 connectDb()
-.then(() => {app.listen(3000, () => {console.log("foi caraio")})})
+.then(() => {app.listen(3000, () => {console.log("Servidor online e banco de dados conectado!!")})})
 .catch(() => console.log("deu ruim"))
 

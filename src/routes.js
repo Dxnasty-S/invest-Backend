@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { createUsers, getUsers, delUsers } from "./controllers/UserController.js";
+import { createUsers, getUsers, delUsers, updateUser, getOneUser } from "./controllers/UserController.js";
 
 
 const routes = Router();
@@ -10,6 +10,7 @@ const routes = Router();
 routes.post("/users", createUsers);
 routes.get("/users", getUsers);
 routes.delete("/users/:id", delUsers);
-
+routes.put("/users/:id", updateUser);
+routes.get("/users/:id", getOneUser);
 
 export default routes;

@@ -33,6 +33,11 @@ const userSchema = new Schema({
         required: true
     },
 
+    patrimony:{
+    type: Number,
+    required: true
+    },
+
     invAmount:{
         type: Number,
         required: true
